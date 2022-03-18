@@ -10,7 +10,7 @@ import java.io.IOException;
  */
 public class SendGridProvider {
 
-    private static SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
+    private static final SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
 
     private static Request req = new Request();
 
